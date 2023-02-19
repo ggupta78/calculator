@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  border: 1px solid gray;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calculator {
+  width: 360px;
+}
+
+.display {
+  height: 180px;
+}
+
+.history {
+  height: 90px;
+}
+
+.main {
+  height: 90px;
+}
+
+.keypad {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.key {
+  width: 90px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
