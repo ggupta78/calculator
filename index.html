@@ -5,13 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 
-  <title>Simple Calculator</title>
+  <title>A Simple Calculator</title>
 </head>
 <body>
   <div class="container">
-    <h1>Let's Calculate!</h1>
+    <h1>A Simple Calculator!</h1>
     <div class="calculator">
       <div class="display">
         <div class="history"></div>
@@ -19,7 +23,7 @@
       </div>
       <div class="keypad">
         <div class="row">
-          <div class="key" id="AC">AC</div>
+          <div class="key" id="AC" title="Escape">AC</div>
           <div class="key" id="sign">+/-</div>
           <div class="key" id="power">^</div>
           <div class="key" id="divide">/</div>
@@ -45,8 +49,8 @@
         <div class="row">
           <div class="key" id="zero">0</div>
           <div class="key" id="decimal">.</div>
-          <div class="key" id="del">del</div>
-          <div class="key" id="equal">=</div>
+          <div class="key" id="del" title="Backspace">⌫</div>
+          <div class="key" id="equal" title="Enter or =">=</div>
         </div>
       </div>
     </div>
