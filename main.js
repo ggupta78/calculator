@@ -113,6 +113,11 @@ const calculate = () => {
       result = '∞ & beyond!';
     }
 
+    //Convert to expnential if number is long
+    if (result.toString().length > 11) {
+      result = result.toExponential(4);
+    }
+
     mainDisplay.innerHTML = result;
     history.length = 0;
   }

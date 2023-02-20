@@ -35,6 +35,7 @@ body {
   text-align: right;
   padding: 15px;
   font-size: 3rem;
+  overflow-wrap: break-word;
 }
 
 .keypad {
