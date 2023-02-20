@@ -132,11 +132,12 @@ const resetCalculator = () => {
 const deleteLastCharFromMainDisplay = () => {
   console.log(history);
   if (mainDisplay.innerHTML.length > 0) {
-    mainDisplay.innerHTML = mainDisplay.innerHTML.substring(0, mainDisplay.innerHTML.length - 1);
+    const finalStr = mainDisplay.innerHTML.substring(0, mainDisplay.innerHTML.length - 1);
+    mainDisplay.innerHTML = (finalStr === '-') ? "" : finalStr;
   } else if (history.length > 0) {
     history.pop();
-    displayHistory();
   }
+  displayHistory();
   console.log(history);
 };
 
