@@ -57,9 +57,9 @@ const displayHistory = () => {
   for (let index = 0; index < history.length; index++) {
     const element = history[index];
     if (!isNaN(element) && element < 0) {
-      equation += `(${element})`;
+      equation += `(${element}) `;
     } else {
-      equation += element;
+      equation += element + ' ';
     }
   }
   historyDisplay.innerHTML = equation;

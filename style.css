@@ -1,12 +1,19 @@
 * {
   box-sizing: border-box;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color: #1E2326;
+}
+
+h1 {
+  font-weight: 300;
+  color: white;
 }
 
 .container {
@@ -19,15 +26,25 @@ body {
 
 .calculator {
   width: 360px;
+  -webkit-box-shadow: -9px 2px 26px 9px rgba(11,13,16,1);
+  -moz-box-shadow: -9px 2px 26px 9px rgba(11,13,16,1);
+  box-shadow: -9px 2px 26px 9px rgba(11,13,16,1);
 }
 
 .display {
   height: 180px;
+  background-color: #FAFAFA;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  color: black;
 }
 
 .history {
   height: 90px;
   padding: 10px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #1D1D1D;
 }
 
 .main {
@@ -35,7 +52,8 @@ body {
   text-align: right;
   padding: 15px;
   font-size: 3rem;
-  overflow-wrap: break-word;
+  font-weight: 300;
+  color: #1D1D1D;
 }
 
 .keypad {
@@ -55,4 +73,16 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: #1E2326;
+  border: 0.3px solid #404040;
+  font-size: 1.4rem;
+}
+
+.operator {
+  background-color: #5E4BB5;
+}
+
+.equal {
+  background-color: #FAC406;
+  color: #1D1D1D;
 }
