@@ -106,7 +106,11 @@ const calculate = () => {
       console.log(term1, operator, term2);
       result = performOperation(term1, operator, term2);
       console.log(result);
-      // history[index] = result;
+    }
+
+    if (result === Infinity) {
+      console.log("inside infinity");
+      result = '∞ & beyond!';
     }
 
     mainDisplay.innerHTML = result;
@@ -177,7 +181,7 @@ const keyClick = (event) => {
 };
 
 const keyUp = (event) => {
-  console.log(event.key, event.code);
+  //console.log(event.key, event.code);
   //Convert keyUp to key.id and call parseClickKey()
   if (Object.hasOwn(keyboardToId, event.key)) {
     parseClickKey(keyboardToId[event.key]);
